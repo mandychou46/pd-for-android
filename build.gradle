@@ -1,12 +1,7 @@
 buildscript {
-    repositories {
-        google()
-        mavenCentral()
-        jcenter() // ✅ để tải com.noisepages.nettoyeur:midi
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.5.0'
-    }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:8.5.0'
+  }
 }
 
 plugins {
@@ -31,13 +26,7 @@ nexusPublishing {
     }
 }
 
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-        jcenter() // FIXME: com.noisepages.nettoyeur:midi
-    }
-}
+
 
 ext {
     minSdkVersion = 28
