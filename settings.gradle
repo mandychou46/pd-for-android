@@ -12,9 +12,11 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        jcenter()
+        maven { url 'https://jitpack.io' }  // ← thêm JitPack
     }
 }
+
+
 
 include ':CircleOfFifths'
 include ':PdCore'
